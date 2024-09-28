@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">MyWeatherApp</string>
+
+    <!--Home-->
+    <string name="txt_clima_home">24°C</string>
+    <string name="txt_sub_tempo">Poucas nuvens</string>
+    <string name="txt_localizacao">Barra Funda, São Paulo</string>
+    <string name="txt_sub_localizacao">Última atualização às 14:30</string>
+
+    <!--Home card em texto-->
+    <string name="txt_sensacao">Sensação térmica</string>
+    <string name="txt_max_min">Máxima/Mínima</string>
+    <string name="txt_umidade">Umidade</string>
+    <string name="txt_visibilidade">Visibilidade</string>
+
+    <!--Home card de números-->
+    <string name="txt_num_sensacao">23°C</string>
+    <string name="txt_num_max_min">25°C/16°C</string>
+    <string name="txt_num_umidade">58%</string>
+    <string name="txt_num_visibilidade">15,20 km</string>
+</resources>
