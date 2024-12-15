@@ -53,4 +53,7 @@ dependencies {
     implementation(libs.retrofit)
     implementation(libs.gson)
     implementation(libs.logging)
+
+//    viewmodel
+    implementation(libs.androidx.fragment)
 }

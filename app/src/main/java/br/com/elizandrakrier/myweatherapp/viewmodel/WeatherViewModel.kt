@@ -15,12 +15,13 @@ class WeatherViewModel: ViewModel() {
     private val _weatherData = MutableLiveData<WeatherResponse>()
     val weatherData: LiveData<WeatherResponse> get() = _weatherData
 
+    private val lat = 2.0
+    private val lon = 3.0
+    private val apiKey = ""
+    private val units = "metric"
+    private val lang = "pt"
+
     fun fetchWeather(
-        lat: Double,
-        lon: Double,
-        apiKey: String,
-        units: String = "metric",
-        lang: String = "pt"
     ) {
         repository.getWeatherByLocation(lat, lon, apiKey, units, lang).enqueue(object :
         Callback<WeatherResponse> {

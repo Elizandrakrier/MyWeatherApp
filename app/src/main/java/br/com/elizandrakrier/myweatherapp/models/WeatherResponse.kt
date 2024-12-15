@@ -1,53 +1,55 @@
 package br.com.elizandrakrier.myweatherapp.models
 
+import com.google.gson.annotations.SerializedName
+
 data class WeatherResponse(
-    val base: String?,
-    val visibility: Int?,
-    val dt: Long?,
-    val id: Int?,
-    val name: String?,
-    val cod: Int?,
-    val coord: Coord?,
-    val weather: List<Weather>?,
-    val main: Main?,
-    val wind: Wind?,
-    val clouds: Clouds?,
-    val sys: Sys?,
-    val timezone: Int?
+    @SerializedName("base") val base: String,
+    @SerializedName("base") val visibility: Int,
+    @SerializedName("base") val timrCalc: Long,
+    @SerializedName("base") val idCity: Int,
+    @SerializedName("base") val name: String,
+    @SerializedName("base") val cod: Int,
+    @SerializedName("base") val coord: Coord,
+    @SerializedName("base") val weather: List<Weather>,
+    @SerializedName("base") val main: Main,
+    @SerializedName("base") val wind: Wind,
+    @SerializedName("base") val clouds: Clouds,
+    @SerializedName("base") val sys: Sys,
+    @SerializedName("base") val timezone: Int
 )
 
 data class Coord(
-    val lon: Double?,
-    val lat: Double?
+    @SerializedName("base") val lon: Double,
+    @SerializedName("base") val lat: Double
 )
 
 data class Weather(
-    val id: Int?,
-    val main: String?,
-    val description: String?,
-    val icon: String?
+    @SerializedName("base") val id: Int,
+    @SerializedName("base") val main: String,
+    @SerializedName("base") val description: String,
+    @SerializedName("base") val icon: String
 )
 
 data class Main(
-    val temp: Double?,
-    val feels_like: Double?,
-    val temp_min: Double?,
-    val temp_max: Double?,
-    val pressure: Int?,
-    val humidity: Int?
+    @SerializedName("base") val temp: Double,
+    @SerializedName("base") val feels_like: Double,
+    @SerializedName("base") val temp_min: Double,
+    @SerializedName("base") val temp_max: Double,
+    @SerializedName("base") val pressure: Int,
+    @SerializedName("base") val humidity: Int
 )
 
 data class Wind(
-    val speed: Double?,
-    val deg: Int?
+    @SerializedName("base") val speed: Double,
+    @SerializedName("base") val deg: Int
 )
 
 data class Clouds(
-    val all: Int?
+    @SerializedName("base") val all: Int
 )
 
 data class Sys(
-    val country: String?,
-    val sunrise: Long?,
-    val sunset: Long?
+    @SerializedName("base") val country: String,
+    @SerializedName("base") val sunrise: Long?,
+    @SerializedName("base") val sunset: Long?
 )

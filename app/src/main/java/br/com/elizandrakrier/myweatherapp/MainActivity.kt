@@ -1,6 +1,7 @@
 package br.com.elizandrakrier.myweatherapp
 
 import android.os.Bundle
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import br.com.elizandrakrier.myweatherapp.databinding.FragmentHomeBinding
@@ -18,8 +19,11 @@ class MainActivity : AppCompatActivity() {
 
         weatherViewModel.weatherData.observe(this, Observer { weatherResponse ->
             if (weatherResponse != null) {
-                binding.txtTempo.text = "${weatherResponse.main?.temp}°C"
+                val temperatura = weatherResponse.main?.temp ?: ""
+                binding.txtTempo.text = "$temperatura°C"
             }
         })
+
+        weatherViewModel.fetchWeather()
     }
 }
