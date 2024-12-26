@@ -12,6 +12,7 @@ constraintlayout = "2.1.4"
 retrofit = "2.6.0"
 loggingInterceptor = "4.5.0"
 fragment = "1.5.5"
+cardview = "1.0.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -26,6 +27,7 @@ androidx-constraintlayout = { group = "androidx.constraintlayout", name = "const
 retrofit = {group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit"}
 gson = {group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit"}
 logging = {group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "loggingInterceptor"}
+androidx-cardview = { group = "androidx.cardview", name = "cardview", version.ref = "cardview" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
