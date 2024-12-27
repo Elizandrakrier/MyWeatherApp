@@ -3,6 +3,7 @@ package br.com.elizandrakrier.myweatherapp.viewmodel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import br.com.elizandrakrier.myweatherapp.keys.WEATHER_API_KEY
 import br.com.elizandrakrier.myweatherapp.models.WeatherResponse
 import br.com.elizandrakrier.myweatherapp.repository.WeatherRepository
 import retrofit2.Call
@@ -17,7 +18,7 @@ class WeatherViewModel: ViewModel() {
 
     private val lat = 2.0
     private val lon = 3.0
-    private val apiKey = ""
+    private val apiKey = WEATHER_API_KEY
     private val units = "metric"
     private val lang = "pt"
 

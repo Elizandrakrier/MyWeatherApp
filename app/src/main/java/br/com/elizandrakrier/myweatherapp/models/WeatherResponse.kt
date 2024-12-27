@@ -4,52 +4,52 @@ import com.google.gson.annotations.SerializedName
 
 data class WeatherResponse(
     @SerializedName("base") val base: String,
-    @SerializedName("base") val visibility: Int,
-    @SerializedName("base") val timrCalc: Long,
-    @SerializedName("base") val idCity: Int,
-    @SerializedName("base") val name: String,
-    @SerializedName("base") val cod: Int,
-    @SerializedName("base") val coord: Coord,
-    @SerializedName("base") val weather: List<Weather>,
-    @SerializedName("base") val main: Main,
-    @SerializedName("base") val wind: Wind,
-    @SerializedName("base") val clouds: Clouds,
-    @SerializedName("base") val sys: Sys,
-    @SerializedName("base") val timezone: Int
+    @SerializedName("visibility") val visibility: Int,
+    @SerializedName("dt") val timeCalc: Long,
+    @SerializedName("id") val idCity: Int,
+    @SerializedName("name") val name: String,
+    @SerializedName("cod") val cod: Int,
+    @SerializedName("coord") val coord: Coord,
+    @SerializedName("weather") val weather: List<Weather>,
+    @SerializedName("main") val main: Main,
+    @SerializedName("wind") val wind: Wind,
+    @SerializedName("clouds") val clouds: Clouds,
+    @SerializedName("sys") val sys: Sys,
+    @SerializedName("timezone") val timezone: Int
 )
 
 data class Coord(
-    @SerializedName("base") val lon: Double,
-    @SerializedName("base") val lat: Double
+    @SerializedName("lon") val lon: Double,
+    @SerializedName("lat") val lat: Double
 )
 
 data class Weather(
-    @SerializedName("base") val id: Int,
-    @SerializedName("base") val main: String,
-    @SerializedName("base") val description: String,
-    @SerializedName("base") val icon: String
+    @SerializedName("id") val id: Int,
+    @SerializedName("main") val main: String,
+    @SerializedName("description") val description: String,
+    @SerializedName("icon") val icon: String
 )
 
 data class Main(
-    @SerializedName("base") val temp: Double,
-    @SerializedName("base") val feels_like: Double,
-    @SerializedName("base") val temp_min: Double,
-    @SerializedName("base") val temp_max: Double,
-    @SerializedName("base") val pressure: Int,
-    @SerializedName("base") val humidity: Int
+    @SerializedName("temp") val temp: Double,
+    @SerializedName("feels_like") val feels_like: Double,
+    @SerializedName("temp_min") val temp_min: Double,
+    @SerializedName("temp_max") val temp_max: Double,
+    @SerializedName("pressure") val pressure: Int,
+    @SerializedName("humidity") val humidity: Int
 )
 
 data class Wind(
-    @SerializedName("base") val speed: Double,
-    @SerializedName("base") val deg: Int
+    @SerializedName("speed") val speed: Double,
+    @SerializedName("deg") val deg: Int
 )
 
 data class Clouds(
-    @SerializedName("base") val all: Int
+    @SerializedName("all") val all: Int
 )
 
 data class Sys(
-    @SerializedName("base") val country: String,
-    @SerializedName("base") val sunrise: Long?,
-    @SerializedName("base") val sunset: Long?
+    @SerializedName("country") val country: String,
+    @SerializedName("sunrise") val sunrise: Long?,
+    @SerializedName("sunset") val sunset: Long?
 )
