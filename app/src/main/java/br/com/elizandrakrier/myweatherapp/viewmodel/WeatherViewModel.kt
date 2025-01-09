@@ -22,8 +22,7 @@ class WeatherViewModel: ViewModel() {
     private val units = "metric"
     private val lang = "pt"
 
-    fun fetchWeather(
-    ) {
+    fun fetchWeather() {
         repository.getWeatherByLocation(lat, lon, apiKey, units, lang).enqueue(object :
         Callback<WeatherResponse> {
             override fun onResponse( call: Call<WeatherResponse>,
