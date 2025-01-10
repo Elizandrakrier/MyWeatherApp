@@ -49,4 +49,12 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+//    Retrofit
+    implementation(libs.retrofit)
+    implementation(libs.gson)
+    implementation(libs.logging)
+
+//    viewmodel
+    implementation(libs.androidx.fragment)
 }
