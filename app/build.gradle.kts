@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    id("com.google.devtools.ksp")
 }
 
 android {
@@ -55,6 +56,11 @@ dependencies {
     implementation(libs.gson)
     implementation(libs.logging)
 
-//    viewmodel
+//    Viewmodel
     implementation(libs.androidx.fragment)
+
+//    Glide
+    implementation(libs.glide)
+    implementation(libs.ksp)
+
 }
